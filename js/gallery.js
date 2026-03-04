@@ -1,18 +1,12 @@
 /**
  * Gallery: Swiper carousel + GLightbox
+ * A11y: keyboard nav, pause on interaction, screen reader labels
  */
 (function () {
-  console.log('[gallery] Module loaded');
-
   function initGallery() {
-    console.log('[gallery] Init started');
-
     // ===== OEUVRES PHARES SWIPER =====
     var oeuvresSwiper = document.querySelector('.swiper--oeuvres');
     if (oeuvresSwiper && typeof Swiper !== 'undefined') {
-      var slideCount = oeuvresSwiper.querySelectorAll('.swiper-slide').length;
-      console.log('[gallery] Swiper container found — ' + slideCount + ' slides');
-
       new Swiper('.swiper--oeuvres', {
         slidesPerView: 1.4,
         spaceBetween: 12,
@@ -26,7 +20,20 @@
         },
         autoplay: {
           delay: 0,
-          disableOnInteraction: false,
+          disableOnInteraction: true,
+          pauseOnMouseEnter: true,
+        },
+        keyboard: {
+          enabled: true,
+        },
+        a11y: {
+          prevSlideMessage: 'Diapositive précédente',
+          nextSlideMessage: 'Diapositive suivante',
+          firstSlideMessage: 'Première diapositive',
+          lastSlideMessage: 'Dernière diapositive',
+          containerMessage: 'Carrousel des oeuvres phares',
+          containerRoleDescriptionMessage: 'carrousel',
+          itemRoleDescriptionMessage: 'diapositive',
         },
         breakpoints: {
           640: { slidesPerView: 1.8, spaceBetween: 16 },
@@ -34,15 +41,11 @@
           1024: { slidesPerView: 3.2, spaceBetween: 24 },
         },
       });
-      console.log('[gallery] Swiper initialized (loop, freeMode, autoplay)');
-    } else {
-      console.log('[gallery] No .swiper--oeuvres found — skipping Swiper');
     }
 
     // ===== GLIGHTBOX =====
     var lightboxElements = document.querySelectorAll('.glightbox');
     if (lightboxElements.length && typeof GLightbox !== 'undefined') {
-      console.log('[gallery] GLightbox: ' + lightboxElements.length + ' elements found');
       GLightbox({
         selector: '.glightbox',
         touchNavigation: true,
@@ -50,13 +53,9 @@
         closeOnOutsideClick: true,
         openEffect: 'fade',
         closeEffect: 'fade',
+        keyboardNavigation: true,
       });
-      console.log('[gallery] GLightbox initialized');
-    } else {
-      console.log('[gallery] No .glightbox elements found — skipping lightbox');
     }
-
-    console.log('[gallery] Init complete');
   }
 
   window.__initGallery = initGallery;

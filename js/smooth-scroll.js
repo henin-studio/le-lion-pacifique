@@ -7,6 +7,13 @@
 
   var isTouchDevice = 'ontouchstart' in window || navigator.maxTouchPoints > 0;
   var isNarrow = window.innerWidth < 768;
+  var prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+
+  if (prefersReducedMotion) {
+    console.log('[smooth-scroll] Reduced motion preferred — Lenis disabled');
+    window.__lenis = null;
+    return;
+  }
 
   if (isTouchDevice || isNarrow) {
     console.log('[smooth-scroll] Touch device or narrow viewport (' + window.innerWidth + 'px) — Lenis disabled');

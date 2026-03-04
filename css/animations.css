@@ -1,5 +1,46 @@
-/* ===== SCROLL REVEAL ===== */
-/* .reveal animations handled by GSAP ScrollTrigger in animations.js */
+/* ===== GSAP INITIAL STATE ===== */
+/* Hide elements before GSAP animates them — prevents flash/jump */
+.hero__title,
+.hero__subtitle,
+.hero__footer,
+.oeuvres__title,
+.swiper--oeuvres,
+.oeuvres__cta,
+.about__image,
+.about__title,
+.about__text,
+.about__quote,
+.about .btn,
+.exposition__title,
+.exposition__image,
+.exposition__text,
+.exposition__event,
+.footer__inner,
+.gallery-grid__item {
+  visibility: hidden;
+}
+
+/* GSAP sets visibility: visible via inline styles when animating */
+/* Fallback if JS fails */
+.no-gsap .hero__title,
+.no-gsap .hero__subtitle,
+.no-gsap .hero__footer,
+.no-gsap .oeuvres__title,
+.no-gsap .swiper--oeuvres,
+.no-gsap .oeuvres__cta,
+.no-gsap .about__image,
+.no-gsap .about__title,
+.no-gsap .about__text,
+.no-gsap .about__quote,
+.no-gsap .about .btn,
+.no-gsap .exposition__title,
+.no-gsap .exposition__image,
+.no-gsap .exposition__text,
+.no-gsap .exposition__event,
+.no-gsap .footer__inner,
+.no-gsap .gallery-grid__item {
+  visibility: visible !important;
+}
 
 /* ===== REDUCED MOTION ===== */
 @media (prefers-reduced-motion: reduce) {
@@ -9,5 +50,26 @@
     animation-duration: 0.01ms !important;
     animation-iteration-count: 1 !important;
     transition-duration: 0.01ms !important;
+  }
+
+  /* Show everything immediately if user prefers no motion */
+  .hero__title,
+  .hero__subtitle,
+  .hero__footer,
+  .oeuvres__title,
+  .swiper--oeuvres,
+  .oeuvres__cta,
+  .about__image,
+  .about__title,
+  .about__text,
+  .about__quote,
+  .about .btn,
+  .exposition__title,
+  .exposition__image,
+  .exposition__text,
+  .exposition__event,
+  .footer__inner,
+  .gallery-grid__item {
+    visibility: visible !important;
   }
 }
