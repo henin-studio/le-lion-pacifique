@@ -285,7 +285,7 @@
   align-items: center;
   justify-content: center;
   gap: var(--space-sm);
-  padding: 14px 24px;
+  padding: 10px 20px;
   font-family: var(--font-main);
   font-size: 15px;
   font-weight: 500;
