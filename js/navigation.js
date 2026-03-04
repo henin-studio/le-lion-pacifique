@@ -1,23 +1,18 @@
 /**
- * Navigation: scroll effects, smooth anchor links
+ * Navigation: scroll hide/show, smooth anchor links
+ * Menu toggle is handled by nav-toggle.js (loaded on all pages)
  */
 (function () {
-  console.log('[navigation] Module loaded');
-
   function initNavigation() {
     var nav = document.querySelector('.nav');
+    var toggle = document.querySelector('.nav__toggle');
+    var menu = document.getElementById('nav-menu');
 
-    if (!nav) {
-      console.warn('[navigation] No .nav element found — aborting');
-      return;
-    }
+    if (!nav) return;
 
-    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') {
-      console.warn('[navigation] GSAP or ScrollTrigger not loaded — skipping scroll effects');
-      return;
-    }
+    if (typeof gsap === 'undefined' || typeof ScrollTrigger === 'undefined') return;
 
-    // Single ScrollTrigger for both background + hide/show
+    // ===== SCROLL HIDE/SHOW =====
     var lastScroll = 0;
     var navHidden = false;
 
@@ -27,17 +22,14 @@
       onUpdate: function () {
         var current = window.scrollY;
 
-        // Background
-        if (current > 50) {
-          nav.classList.add('nav--scrolled');
-        } else {
-          nav.classList.remove('nav--scrolled');
-        }
-
-        // Hide/show — only animate when state changes
         var shouldHide = current > lastScroll && current > 200;
         if (shouldHide && !navHidden) {
           navHidden = true;
+          // Close menu when hiding nav
+          if (toggle && menu) {
+            toggle.setAttribute('aria-expanded', 'false');
+            menu.hidden = true;
+          }
           gsap.to(nav, { yPercent: -100, duration: 0.3, ease: 'power2.in', overwrite: true });
         } else if (!shouldHide && navHidden) {
           navHidden = false;
@@ -48,7 +40,7 @@
       },
     });
 
-    // Smooth anchor scroll
+    // ===== SMOOTH ANCHOR SCROLL =====
     var anchors = document.querySelectorAll('a[href^="#"]');
     anchors.forEach(function (anchor) {
       anchor.addEventListener('click', function (e) {
@@ -65,8 +57,6 @@
         }
       });
     });
-
-    console.log('[navigation] Init complete');
   }
 
   window.__initNavigation = initNavigation;

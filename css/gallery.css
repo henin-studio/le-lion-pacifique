@@ -1,9 +1,11 @@
 /* ===== GALLERY PAGE ===== */
+body {
+  background: var(--color-white);
+}
 
 /* --- Header --- */
 .gallery-header {
   padding: 120px var(--gutter) var(--space-xl);
-  background: var(--color-white);
   text-align: center;
 }
 
@@ -25,7 +27,6 @@
 
 /* --- Quote --- */
 .gallery-quote {
-  background: var(--color-white);
   padding: var(--space-xl) var(--gutter) var(--space-2xl);
   text-align: center;
 }
@@ -51,7 +52,6 @@
 
 /* --- Filters --- */
 .gallery-section {
-  background: var(--color-white);
   padding: 0 var(--gutter) var(--space-2xl);
 }
 
@@ -127,7 +127,6 @@
 
 /* --- CTA --- */
 .gallery-cta {
-  background: var(--color-white);
   text-align: center;
   padding: var(--space-xl) var(--gutter) var(--space-2xl);
 }
@@ -143,6 +142,120 @@
 .gallery-cta .btn {
   max-width: 320px;
   margin-inline: auto;
+}
+
+/* --- Oeuvre Modal --- */
+.oeuvre-modal {
+  position: fixed;
+  inset: 0;
+  z-index: 200;
+  display: flex;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity var(--duration-base) var(--ease-out);
+}
+
+.oeuvre-modal--open {
+  pointer-events: auto;
+  opacity: 1;
+}
+
+.oeuvre-modal__overlay {
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.6);
+}
+
+.oeuvre-modal__panel {
+  position: relative;
+  margin-top: 84px; /* clear navbar */
+  width: 100%;
+  max-width: 540px;
+  margin-left: auto;
+  margin-right: auto;
+  background: var(--color-white);
+  overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
+  display: flex;
+  flex-direction: column;
+  padding: var(--space-xl) var(--gutter) var(--space-2xl);
+  z-index: 1;
+}
+
+.oeuvre-modal__close {
+  position: absolute;
+  top: var(--space-md);
+  right: var(--space-md);
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: var(--color-text-inverse);
+  padding: var(--space-sm);
+  z-index: 2;
+  transition: opacity var(--duration-base) var(--ease-out);
+}
+
+.oeuvre-modal__close:hover {
+  opacity: 0.5;
+}
+
+.oeuvre-modal__close:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+}
+
+.oeuvre-modal__image-wrap {
+  margin-top: var(--space-xl);
+  margin-bottom: var(--space-lg);
+}
+
+.oeuvre-modal__image {
+  width: 100%;
+  display: block;
+  object-fit: contain;
+}
+
+.oeuvre-modal__info {
+  display: flex;
+  justify-content: space-between;
+  gap: var(--space-lg);
+  margin-bottom: var(--space-xl);
+}
+
+.oeuvre-modal__desc {
+  flex: 1;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--color-text-inverse);
+  letter-spacing: -0.02em;
+}
+
+.oeuvre-modal__meta {
+  text-align: right;
+  flex-shrink: 0;
+}
+
+.oeuvre-modal__title {
+  font-size: 14px;
+  font-weight: 500;
+  color: var(--color-text-inverse);
+  letter-spacing: -0.02em;
+}
+
+.oeuvre-modal__year {
+  font-size: 14px;
+  color: var(--color-text-inverse);
+  letter-spacing: -0.02em;
+}
+
+.oeuvre-modal__dimensions {
+  font-size: 14px;
+  color: var(--color-text-inverse);
+  letter-spacing: -0.02em;
+}
+
+.oeuvre-modal__cta {
+  margin-top: auto;
 }
 
 /* ===== RESPONSIVE ===== */

@@ -10,7 +10,7 @@
   <meta property="og:title" content="Alpha Oumar Diallo — Peintre">
   <meta property="og:description" content="Peintre actif dans l'espace public à Bruxelles">
   <meta property="og:type" content="website">
-  <meta property="og:image" content="assets/images/gallery/hero-painting.jpeg">
+  <meta property="og:image" content="assets/images/homepage/hero-painting.jpeg">
 
   <link rel="icon" href="data:,">
 
@@ -35,14 +35,29 @@
 
   <!-- ===== NAVIGATION ===== -->
   <nav class="nav" aria-label="Navigation principale">
-    <div class="container nav__inner">
+    <div class="container nav__bar">
       <a href="index.html" class="nav__logo" aria-label="Alpha Oumar Diallo — Accueil">
         <img src="assets/images/logo-alpha.png" alt="" class="nav__logo-img">
       </a>
 
-      <ul class="nav__links">
+      <div class="nav__right">
+        <div class="nav__socials">
+          <span class="nav__social" aria-label="Facebook"><i data-lucide="facebook" class="icon icon--20" aria-hidden="true"></i></span>
+          <a href="https://www.instagram.com/alpha_lion_pacifique/" target="_blank" rel="noopener noreferrer" class="nav__social" aria-label="Instagram (nouvel onglet)">
+            <i data-lucide="instagram" class="icon icon--20" aria-hidden="true"></i>
+          </a>
+        </div>
+        <button class="nav__toggle" aria-expanded="false" aria-controls="nav-menu">
+          <span class="nav__toggle-text">Menu</span>
+        </button>
+      </div>
+    </div>
+
+    <div class="nav__menu" id="nav-menu" hidden>
+      <ul class="nav__links container">
         <li><a href="pages/gallery.html" class="nav__link">Galerie</a></li>
-        <li><a href="#contact" class="nav__link">Contact</a></li>
+        <li><a href="pages/artist.html" class="nav__link">Biographie</a></li>
+        <li><a href="pages/contact.html" class="nav__link">Demande</a></li>
       </ul>
     </div>
   </nav>
@@ -52,7 +67,7 @@
   <!-- ===== HERO ===== -->
   <header class="hero">
     <div class="hero__bg">
-      <img src="assets/images/gallery/hero-painting.jpeg" alt="" class="hero__bg-img" aria-hidden="true">
+      <img src="assets/images/homepage/hero-painting.jpeg" alt="" class="hero__bg-img" aria-hidden="true">
     </div>
     <div class="hero__overlay"></div>
 
@@ -69,8 +84,8 @@
     </div>
 
     <div class="hero__footer">
-      <span class="hero__social">Facebook</span>
-      <a href="https://www.instagram.com/alpha_lion_pacifique/" target="_blank" rel="noopener noreferrer" class="hero__social">Instagram <span class="sr-only">(nouvel onglet)</span></a>
+      <a href="pages/gallery.html" class="hero__btn hero__btn--filled">Voir la galerie</a>
+      <a href="pages/contact.html" class="hero__btn hero__btn--outline">Demande de projet <i data-lucide="arrow-right" class="icon icon--20" aria-hidden="true"></i></a>
     </div>
   </header>
 
@@ -82,64 +97,64 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
           <figure class="fig">
-            <a href="assets/images/gallery/oeuvre-geometrique-rose.jpeg" class="glightbox" data-gallery="oeuvres">
-              <img src="assets/images/gallery/oeuvre-geometrique-rose.jpeg" alt="Portrait cubiste géométrique" loading="lazy">
+            <a href="assets/images/homepage/oeuvre-geometrique-rose.jpeg" class="glightbox" data-gallery="oeuvres">
+              <img src="assets/images/homepage/oeuvre-geometrique-rose.jpeg" alt="Portrait cubiste géométrique" loading="lazy">
             </a>
             <figcaption>Portrait cubiste</figcaption>
           </figure>
         </div>
         <div class="swiper-slide">
           <figure class="fig">
-            <a href="assets/images/gallery/oeuvre-musicien-flute.png" class="glightbox" data-gallery="oeuvres">
-              <img src="assets/images/gallery/oeuvre-musicien-flute.png" alt="Le musicien à la flûte" loading="lazy">
+            <a href="assets/images/homepage/oeuvre-musicien-flute.png" class="glightbox" data-gallery="oeuvres">
+              <img src="assets/images/homepage/oeuvre-musicien-flute.png" alt="Le musicien à la flûte" loading="lazy">
             </a>
             <figcaption>Le musicien</figcaption>
           </figure>
         </div>
         <div class="swiper-slide">
           <figure class="fig">
-            <a href="assets/images/gallery/oeuvre-visage-bleu.png" class="glightbox" data-gallery="oeuvres">
-              <img src="assets/images/gallery/oeuvre-visage-bleu.png" alt="Visage aux tons bleus" loading="lazy">
+            <a href="assets/images/homepage/oeuvre-visage-bleu.png" class="glightbox" data-gallery="oeuvres">
+              <img src="assets/images/homepage/oeuvre-visage-bleu.png" alt="Visage aux tons bleus" loading="lazy">
             </a>
             <figcaption>Visage bleu</figcaption>
           </figure>
         </div>
         <div class="swiper-slide">
           <figure class="fig">
-            <a href="assets/images/gallery/oeuvre-lion.png" class="glightbox" data-gallery="oeuvres">
-              <img src="assets/images/gallery/oeuvre-lion.png" alt="Lion coloré" loading="lazy">
+            <a href="assets/images/homepage/oeuvre-lion.png" class="glightbox" data-gallery="oeuvres">
+              <img src="assets/images/homepage/oeuvre-lion.png" alt="Lion coloré" loading="lazy">
             </a>
             <figcaption>Le Lion</figcaption>
           </figure>
         </div>
         <div class="swiper-slide">
           <figure class="fig">
-            <a href="assets/images/gallery/oeuvre-cheval.png" class="glightbox" data-gallery="oeuvres">
-              <img src="assets/images/gallery/oeuvre-cheval.png" alt="Cheval au coucher de soleil" loading="lazy">
+            <a href="assets/images/homepage/oeuvre-cheval.png" class="glightbox" data-gallery="oeuvres">
+              <img src="assets/images/homepage/oeuvre-cheval.png" alt="Cheval au coucher de soleil" loading="lazy">
             </a>
             <figcaption>Le Cheval</figcaption>
           </figure>
         </div>
         <div class="swiper-slide">
           <figure class="fig">
-            <a href="assets/images/gallery/oeuvre-visages-fleur.jpeg" class="glightbox" data-gallery="oeuvres">
-              <img src="assets/images/gallery/oeuvre-visages-fleur.jpeg" alt="Visages aux pétales colorés" loading="lazy">
+            <a href="assets/images/homepage/oeuvre-visages-fleur.jpeg" class="glightbox" data-gallery="oeuvres">
+              <img src="assets/images/homepage/oeuvre-visages-fleur.jpeg" alt="Visages aux pétales colorés" loading="lazy">
             </a>
             <figcaption>Visages fleuris</figcaption>
           </figure>
         </div>
         <div class="swiper-slide">
           <figure class="fig">
-            <a href="assets/images/gallery/oeuvre-femme-turban.jpeg" class="glightbox" data-gallery="oeuvres">
-              <img src="assets/images/gallery/oeuvre-femme-turban.jpeg" alt="Femme au turban" loading="lazy">
+            <a href="assets/images/homepage/oeuvre-femme-turban.jpeg" class="glightbox" data-gallery="oeuvres">
+              <img src="assets/images/homepage/oeuvre-femme-turban.jpeg" alt="Femme au turban" loading="lazy">
             </a>
             <figcaption>Femme au turban</figcaption>
           </figure>
         </div>
         <div class="swiper-slide">
           <figure class="fig">
-            <a href="assets/images/gallery/oeuvre-portrait-femme.jpeg" class="glightbox" data-gallery="oeuvres">
-              <img src="assets/images/gallery/oeuvre-portrait-femme.jpeg" alt="Portrait de femme" loading="lazy">
+            <a href="assets/images/homepage/oeuvre-portrait-femme.jpeg" class="glightbox" data-gallery="oeuvres">
+              <img src="assets/images/homepage/oeuvre-portrait-femme.jpeg" alt="Portrait de femme" loading="lazy">
             </a>
             <figcaption>Portrait de femme</figcaption>
           </figure>
@@ -155,7 +170,7 @@
   <!-- ===== À PROPOS ===== -->
   <section id="about" class="about">
     <figure class="about__image fig">
-      <img src="assets/images/gallery/artist-portrait.png" alt="Alpha Oumar Diallo dans son atelier" loading="lazy">
+      <img src="assets/images/homepage/artist-portrait.png" alt="Alpha Oumar Diallo dans son atelier" loading="lazy">
       <figcaption>Alpha Oumar Diallo</figcaption>
     </figure>
 
@@ -190,7 +205,7 @@
       </h2>
 
       <figure class="exposition__image fig">
-        <img src="assets/images/gallery/artist-street-brussels.jpeg" alt="Alpha Oumar Diallo peignant dans les rues de Bruxelles" loading="lazy">
+        <img src="assets/images/homepage/artist-street-brussels.jpeg" alt="Alpha Oumar Diallo peignant dans les rues de Bruxelles" loading="lazy">
         <figcaption>Bruxelles, rue du Marché aux Poulets</figcaption>
       </figure>
 
@@ -224,17 +239,29 @@
         <a href="index.html" class="footer__logo" aria-label="Alpha Oumar Diallo">
           <img src="assets/images/logo-alpha.png" alt="">
         </a>
-        <a href="https://www.instagram.com/alpha_lion_pacifique/" target="_blank" rel="noopener noreferrer" class="footer__instagram" aria-label="Instagram (nouvel onglet)">
-          <i data-lucide="instagram" class="icon icon--28" aria-hidden="true"></i>
-        </a>
+        <div class="footer__socials">
+          <span class="footer__social" aria-label="Facebook"><i data-lucide="facebook" class="icon icon--20" aria-hidden="true"></i></span>
+          <a href="https://www.instagram.com/alpha_lion_pacifique/" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Instagram (nouvel onglet)">
+            <i data-lucide="instagram" class="icon icon--20" aria-hidden="true"></i>
+          </a>
+        </div>
       </div>
 
-      <p class="footer__description">
-        « Seulement si tu le veux vraiment.<br>
-        Chacun a ses propres problèmes,<br>
-        je ne veux pas t'obliger. »<br>
-        <small>— Alpha Oumar Diallo, Erasmix</small>
-      </p>
+      <blockquote class="footer__quote">
+        « Seulement si tu le veux vraiment. Chacun a ses propres problèmes, je ne veux pas t'obliger. »
+        <footer><small>— Alpha Oumar Diallo, Erasmix</small></footer>
+      </blockquote>
+
+      <div class="footer__contact">
+        <p class="footer__contact-label">Contacter Alpha Diallo</p>
+        <div class="footer__input-wrap">
+          <label for="footer-email" class="sr-only">Adresse email</label>
+          <input type="email" id="footer-email" class="footer__input" placeholder="votre-email@example.com">
+          <button type="button" class="footer__input-btn" aria-label="Envoyer">
+            <i data-lucide="arrow-right" class="icon icon--20" aria-hidden="true"></i>
+          </button>
+        </div>
+      </div>
 
       <div class="footer__bottom">
         <p>Bruxelles, Belgique</p>
@@ -253,11 +280,14 @@
   <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
 
   <!-- App -->
+  <script src="js/mobile-only.js"></script>
+  <script src="js/nav-toggle.js"></script>
   <script src="js/smooth-scroll.js"></script>
   <script src="js/animations.js"></script>
   <script src="js/navigation.js"></script>
   <script src="js/gallery.js"></script>
   <script src="js/app.js"></script>
+  <script src="js/footer-email.js"></script>
   <script>if (typeof lucide !== 'undefined') { lucide.createIcons(); }</script>
 </body>
 </html>

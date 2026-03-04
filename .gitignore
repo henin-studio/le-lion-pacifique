@@ -19,7 +19,9 @@ dist/
 .env
 .env.local
 
-# Large media (uncomment if needed)
+# Large media
 # assets/video/*.mp4
 # assets/images/hero/*.jpg
+assets/images/galerie/
+*.zip
 .vercel

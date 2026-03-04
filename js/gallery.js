@@ -2,6 +2,7 @@
  * Gallery: Swiper carousel + GLightbox
  * A11y: keyboard nav, pause on interaction, screen reader labels
  */
+
 (function () {
   function initGallery() {
     // ===== OEUVRES PHARES SWIPER =====
