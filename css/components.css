@@ -284,7 +284,7 @@
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  gap: var(--space-sm);
+  /* gap: var(--space-sm); */
   padding: 10px 20px;
   font-family: var(--font-main);
   font-size: 15px;
