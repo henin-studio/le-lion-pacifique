@@ -1,0 +1,38 @@
+html, body {
+  overflow-x: hidden;
+}
+
+body {
+  font-family: var(--font-main);
+  font-size: 16px;
+  color: var(--color-text);
+  background-color: var(--color-bg);
+}
+
+h1, h2, h3, h4 {
+  font-family: var(--font-main);
+  font-weight: 600;
+  line-height: 1.25;
+  text-transform: uppercase;
+  letter-spacing: -0.03em;
+}
+
+p {
+  max-width: 65ch;
+  line-height: 1.6;
+  letter-spacing: -0.03em;
+}
+
+a {
+  transition: opacity var(--duration-fast) var(--ease-out);
+}
+
+::selection {
+  background-color: var(--color-text-secondary);
+  color: var(--color-white);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-focus);
+  outline-offset: 3px;
+}

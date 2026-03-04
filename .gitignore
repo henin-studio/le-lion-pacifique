@@ -1,0 +1,25 @@
+# Dependencies
+node_modules/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Editor
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Build
+dist/
+.cache/
+
+# Environment
+.env
+.env.local
+
+# Large media (uncomment if needed)
+# assets/video/*.mp4
+# assets/images/hero/*.jpg
+.vercel

@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Galerie — Alpha Oumar Diallo | Le Lion Pacifique</title>
+  <meta name="description" content="Galerie d'oeuvres d'Alpha Oumar Diallo — Le Lion Pacifique. Peintures vibrantes, colorées, profondément humaines.">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Galerie — Alpha Oumar Diallo">
+  <meta property="og:description" content="Les oeuvres d'Alpha Oumar Diallo — peinture, couleurs, résistance.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="../assets/images/gallery/hero-painting.jpeg">
+
+  <link rel="icon" href="data:,">
+
+  <!-- Fonts (self-hosted) -->
+  <link rel="stylesheet" href="../css/fonts.css">
+
+  <!-- Libraries CSS -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/glightbox/dist/css/glightbox.min.css">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="../css/reset.css">
+  <link rel="stylesheet" href="../css/variables.css">
+  <link rel="stylesheet" href="../css/base.css">
+  <link rel="stylesheet" href="../css/layout.css">
+  <link rel="stylesheet" href="../css/components.css">
+  <link rel="stylesheet" href="../css/animations.css">
+  <link rel="stylesheet" href="../css/responsive.css">
+  <link rel="stylesheet" href="../css/gallery.css">
+</head>
+<body>
+  <a href="#main" class="skip-link">Aller au contenu</a>
+
+  <!-- ===== NAVIGATION ===== -->
+  <nav class="nav nav--scrolled" aria-label="Navigation principale">
+    <div class="container nav__inner">
+      <a href="../index.html" class="nav__logo" aria-label="Alpha Oumar Diallo — Accueil">
+        <img src="../assets/images/logo-alpha.png" alt="Alpha Oumar Diallo" class="nav__logo-img">
+      </a>
+
+      <ul class="nav__links">
+        <li><a href="../index.html" class="nav__link">Accueil</a></li>
+        <li><a href="#contact" class="nav__link">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <main id="main">
+
+  <!-- ===== GALLERY HEADER ===== -->
+  <header class="gallery-header">
+    <div class="gallery-header__content">
+      <h1 class="gallery-header__title">Galerie</h1>
+      <p class="gallery-header__subtitle">Les couleurs comme liberté sans frontière</p>
+    </div>
+  </header>
+
+  <!-- ===== ARTIST QUOTE ===== -->
+  <section class="gallery-quote">
+    <blockquote class="gallery-quote__text">
+      Je rêve d'un endroit à moi, et idéalement je veux juste un hébergement temporaire.
+      <footer class="gallery-quote__cite">— Alpha Oumar Diallo, Erasmix</footer>
+    </blockquote>
+  </section>
+
+  <!-- ===== FILTERS ===== -->
+  <section class="gallery-section">
+    <div class="gallery-filters">
+      <button class="gallery-filters__btn gallery-filters__btn--active" data-filter="all" aria-pressed="true">Tout</button>
+      <button class="gallery-filters__btn" data-filter="peinture" aria-pressed="false">Peinture</button>
+      <button class="gallery-filters__btn" data-filter="portrait" aria-pressed="false">Portraits</button>
+    </div>
+
+    <!-- ===== GRID ===== -->
+    <div class="gallery-grid" id="gallery-grid">
+
+      <figure class="gallery-grid__item fig" data-category="peinture">
+        <a href="../assets/images/gallery/oeuvre-geometrique-rose.jpeg" class="glightbox" data-gallery="works" data-title="Portrait cubiste">
+          <img src="../assets/images/gallery/oeuvre-geometrique-rose.jpeg" alt="Portrait cubiste aux tons géométriques et roses" loading="lazy">
+        </a>
+        <figcaption>Portrait cubiste</figcaption>
+      </figure>
+
+      <figure class="gallery-grid__item fig" data-category="peinture">
+        <a href="../assets/images/gallery/oeuvre-musicien-flute.png" class="glightbox" data-gallery="works" data-title="Le musicien">
+          <img src="../assets/images/gallery/oeuvre-musicien-flute.png" alt="Le musicien à la flûte" loading="lazy">
+        </a>
+        <figcaption>Le musicien</figcaption>
+      </figure>
+
+      <figure class="gallery-grid__item fig" data-category="portrait">
+        <a href="../assets/images/gallery/oeuvre-visage-bleu.png" class="glightbox" data-gallery="works" data-title="Visage bleu">
+          <img src="../assets/images/gallery/oeuvre-visage-bleu.png" alt="Visage aux tons bleus" loading="lazy">
+        </a>
+        <figcaption>Visage bleu</figcaption>
+      </figure>
+
+      <figure class="gallery-grid__item fig" data-category="peinture">
+        <a href="../assets/images/gallery/oeuvre-lion.png" class="glightbox" data-gallery="works" data-title="Le Lion">
+          <img src="../assets/images/gallery/oeuvre-lion.png" alt="Lion coloré majestueux" loading="lazy">
+        </a>
+        <figcaption>Le Lion</figcaption>
+      </figure>
+
+      <figure class="gallery-grid__item fig" data-category="peinture">
+        <a href="../assets/images/gallery/oeuvre-cheval.png" class="glightbox" data-gallery="works" data-title="Le Cheval">
+          <img src="../assets/images/gallery/oeuvre-cheval.png" alt="Cheval au coucher de soleil" loading="lazy">
+        </a>
+        <figcaption>Le Cheval</figcaption>
+      </figure>
+
+      <figure class="gallery-grid__item fig" data-category="portrait">
+        <a href="../assets/images/gallery/oeuvre-visages-fleur.jpeg" class="glightbox" data-gallery="works" data-title="Visages fleuris">
+          <img src="../assets/images/gallery/oeuvre-visages-fleur.jpeg" alt="Visages aux pétales colorés" loading="lazy">
+        </a>
+        <figcaption>Visages fleuris</figcaption>
+      </figure>
+
+      <figure class="gallery-grid__item fig" data-category="portrait">
+        <a href="../assets/images/gallery/oeuvre-femme-turban.jpeg" class="glightbox" data-gallery="works" data-title="Femme au turban">
+          <img src="../assets/images/gallery/oeuvre-femme-turban.jpeg" alt="Femme au turban coloré" loading="lazy">
+        </a>
+        <figcaption>Femme au turban</figcaption>
+      </figure>
+
+      <figure class="gallery-grid__item fig" data-category="portrait">
+        <a href="../assets/images/gallery/oeuvre-portrait-femme.jpeg" class="glightbox" data-gallery="works" data-title="Portrait de femme">
+          <img src="../assets/images/gallery/oeuvre-portrait-femme.jpeg" alt="Portrait de femme" loading="lazy">
+        </a>
+        <figcaption>Portrait de femme</figcaption>
+      </figure>
+
+      <figure class="gallery-grid__item fig" data-category="peinture">
+        <a href="../assets/images/gallery/oeuvre-musiciens.png" class="glightbox" data-gallery="works" data-title="Les Musiciens">
+          <img src="../assets/images/gallery/oeuvre-musiciens.png" alt="Groupe de musiciens colorés" loading="lazy">
+        </a>
+        <figcaption>Les Musiciens</figcaption>
+      </figure>
+
+      <figure class="gallery-grid__item fig" data-category="portrait">
+        <a href="../assets/images/gallery/oeuvre-visage-sombre.png" class="glightbox" data-gallery="works" data-title="Visage sombre">
+          <img src="../assets/images/gallery/oeuvre-visage-sombre.png" alt="Visage aux tons sombres" loading="lazy">
+        </a>
+        <figcaption>Visage sombre</figcaption>
+      </figure>
+
+      <figure class="gallery-grid__item fig" data-category="portrait">
+        <a href="../assets/images/gallery/oeuvre-visages-duo.png" class="glightbox" data-gallery="works" data-title="Duo de visages">
+          <img src="../assets/images/gallery/oeuvre-visages-duo.png" alt="Duo de visages aux couleurs vives" loading="lazy">
+        </a>
+        <figcaption>Duo de visages</figcaption>
+      </figure>
+
+      <figure class="gallery-grid__item fig" data-category="peinture">
+        <a href="../assets/images/gallery/oeuvre-afrique-larme.png" class="glightbox" data-gallery="works" data-title="L'Afrique en larme">
+          <img src="../assets/images/gallery/oeuvre-afrique-larme.png" alt="L'Afrique en larme — continent aux couleurs vives" loading="lazy">
+        </a>
+        <figcaption>L'Afrique en larme</figcaption>
+      </figure>
+
+    </div>
+  </section>
+
+  <!-- ===== CONTACT CTA ===== -->
+  <section class="gallery-cta">
+    <p class="gallery-cta__text">Une oeuvre vous touche ?</p>
+    <a href="../index.html#contact" class="btn btn--dark">Prendre contact</a>
+  </section>
+
+  </main>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer" id="contact">
+    <div class="footer__inner">
+      <div class="footer__top">
+        <a href="../index.html" class="footer__logo" aria-label="Alpha Oumar Diallo">
+          <img src="../assets/images/logo-alpha.png" alt="Alpha Oumar Diallo">
+        </a>
+        <a href="https://www.instagram.com/alpha_lion_pacifique/" target="_blank" rel="noopener noreferrer" class="footer__instagram" aria-label="Instagram">
+          <i data-lucide="instagram" class="icon icon--28" aria-hidden="true"></i>
+        </a>
+      </div>
+
+      <p class="footer__description">
+        « Seulement si tu le veux vraiment.<br>
+        Chacun a ses propres problèmes,<br>
+        je ne veux pas t'obliger. »<br>
+        <small>— Alpha Oumar Diallo, Erasmix</small>
+      </p>
+
+      <div class="footer__bottom">
+        <p>Bruxelles, Belgique</p>
+        <p>&copy; 2026 Alpha Oumar Diallo</p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Libraries JS -->
+  <script src="https://cdn.jsdelivr.net/npm/lucide@latest/dist/umd/lucide.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/glightbox/dist/js/glightbox.min.js"></script>
+
+  <!-- App -->
+  <script src="../js/gallery-filters.js"></script>
+  <script>
+    (function () {
+      console.log('[gallery-page] Inline script loaded');
+      if (typeof GLightbox !== 'undefined') {
+        var lbElements = document.querySelectorAll('.glightbox');
+        console.log('[gallery-page] GLightbox elements: ' + lbElements.length);
+        GLightbox({
+          selector: '.glightbox',
+          touchNavigation: true,
+          loop: true,
+          closeOnOutsideClick: true,
+          openEffect: 'fade',
+          closeEffect: 'fade',
+        });
+        console.log('[gallery-page] GLightbox initialized');
+      } else {
+        console.warn('[gallery-page] GLightbox not loaded');
+      }
+      if (typeof lucide !== 'undefined') {
+        lucide.createIcons();
+        console.log('[gallery-page] Lucide icons created');
+      }
+    })();
+  </script>
+</body>
+</html>
