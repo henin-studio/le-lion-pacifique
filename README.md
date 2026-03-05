@@ -43,7 +43,7 @@ https://www.figma.com/deck/JD8g5sSGmObDtS2JtuOuA9/Pr%C3%A9sentation---Le-Lion-Pa
 
 
 Github de la version 1
-TO add
+/Users/denishenin/Documents/le-lion-pacifique/assets/v1/le-lion-pacifique_V1
 
 Github de la version finale après 3 jours:
 https://github.com/henin-studio/le-lion-pacifique?tab=readme-ov-file
