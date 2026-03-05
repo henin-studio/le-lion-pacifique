@@ -275,7 +275,7 @@
 
 .hero__footer {
   display: flex;
-  margin-top: 12vh;
+  margin-top: 10gitvh;
   justify-content: center;
   gap: var(--space-md);
   padding: var(--space-xl) var(--gutter);
