@@ -249,7 +249,7 @@
 }
 
 .hero__content {
-  margin-top: auto;
+  margin-top: 40vh;
   padding: 0 var(--gutter);
   text-align: center;
 }
@@ -275,6 +275,8 @@
 
 .hero__footer {
   display: flex;
+  margin-top: 15vh;
+  justify-content: center;
   gap: var(--space-md);
   padding: var(--space-xl) var(--gutter);
   padding-bottom: calc(var(--space-xl) + env(safe-area-inset-bottom, 0px));

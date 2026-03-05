@@ -39,7 +39,6 @@
 
       <div class="nav__right">
         <div class="nav__socials">
-          <span class="nav__social" aria-label="Facebook"><i data-lucide="facebook" class="icon icon--20" aria-hidden="true"></i></span>
           <a href="https://www.instagram.com/alpha_lion_pacifique/" target="_blank" rel="noopener noreferrer" class="nav__social" aria-label="Instagram (nouvel onglet)">
             <i data-lucide="instagram" class="icon icon--20" aria-hidden="true"></i>
           </a>
@@ -114,15 +113,6 @@
         </div>
       </div>
 
-      <div class="request-form__field">
-        <label for="request-upload" class="request-form__upload" role="button" tabindex="0">
-          <i data-lucide="upload" class="icon icon--20" aria-hidden="true"></i>
-          <span class="request-form__upload-text">Téléchargez vos inspirations</span>
-          <span class="request-form__upload-info">JPG, PNG, WEBp<br>10 MB max</span>
-          <input type="file" id="request-upload" name="upload" class="sr-only" accept=".jpg,.jpeg,.png,.webp" multiple>
-        </label>
-      </div>
-
       <button type="submit" class="request-form__submit btn btn--dark">Envoyer</button>
     </form>
   </section>
@@ -137,7 +127,6 @@
           <img src="../assets/images/logo-alpha.png" alt="">
         </a>
         <div class="footer__socials">
-          <span class="footer__social" aria-label="Facebook"><i data-lucide="facebook" class="icon icon--20" aria-hidden="true"></i></span>
           <a href="https://www.instagram.com/alpha_lion_pacifique/" target="_blank" rel="noopener noreferrer" class="footer__social" aria-label="Instagram (nouvel onglet)">
             <i data-lucide="instagram" class="icon icon--20" aria-hidden="true"></i>
           </a>
@@ -148,17 +137,6 @@
         « Seulement si tu le veux vraiment. Chacun a ses propres problèmes, je ne veux pas t'obliger. »
         <footer><small>— Alpha Oumar Diallo, Erasmix</small></footer>
       </blockquote>
-
-      <div class="footer__contact">
-        <p class="footer__contact-label">Contacter Alpha Diallo</p>
-        <div class="footer__input-wrap">
-          <label for="footer-email" class="sr-only">Adresse email</label>
-          <input type="email" id="footer-email" class="footer__input" placeholder="votre-email@example.com">
-          <button type="button" class="footer__input-btn" aria-label="Envoyer">
-            <i data-lucide="arrow-right" class="icon icon--20" aria-hidden="true"></i>
-          </button>
-        </div>
-      </div>
 
       <div class="footer__bottom">
         <p>Bruxelles, Belgique</p>
@@ -175,7 +153,9 @@
   <!-- App -->
   <script src="../js/mobile-only.js"></script>
   <script src="../js/nav-toggle.js"></script>
-  <script src="../js/footer-email.js"></script>
+  <script src="../js/form.js"></script>
+
+
   <script>
     (function () {
       // Remove no-gsap fallback
@@ -330,5 +310,7 @@
       }
     })();
   </script>
+
+
 </body>
 </html>
