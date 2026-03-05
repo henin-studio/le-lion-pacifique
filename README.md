@@ -32,6 +32,27 @@ Site galerie mobile-first pour l'artiste peintre Alpha Oumar Diallo, actif dans 
 
 Vanilla HTML / CSS / JS. Aucun framework, aucun bundler.
 
+
+## Links figma
+
+Lien Figma
+https://www.figma.com/design/zWFGRDij4o2kEylYiD3jeW/Lion-Pacifique?node-id=0-1&t=21oO1WbijT6ksz8U-0
+
+Presentation
+https://www.figma.com/deck/JD8g5sSGmObDtS2JtuOuA9/Pr%C3%A9sentation---Le-Lion-Pacifique?node-id=1-33&t=ikvJ1ojB4o32kd4C-1
+
+
+Github de la version 1
+TO add
+
+Github de la version finale après 3 jours:
+https://github.com/henin-studio/le-lion-pacifique?tab=readme-ov-file
+
+
+### Devis dans Assets 
+/le-lion-pacifique/assets/Devis.pdf
+
+
 ### Libraries (CDN)
 
 | Library | Version | Usage | Docs |
