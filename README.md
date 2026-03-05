@@ -115,7 +115,7 @@ le-lion-pacifique/
 │   ├── animations.js           # GSAP hero + scroll reveal
 │   ├── navigation.js           # Nav scroll effects + anchor links
 │   ├── gallery.js              # Swiper + GLightbox init
-│   └── gallery-filters.js      # Filtres galerie (GSAP + fallback CSS)
+│   ├── form.js                 # form
 ├── assets/
 │   ├── fonts/                  # DM Sans woff2 (4 fichiers)
 │   └── images/
