@@ -67,7 +67,7 @@ body {
 
 /* --- Separator --- */
 .artist-separator {
-  padding: var(--space-2xl) var(--gutter);
+  padding: var(--space-lg) var(--gutter);
   text-align: center;
   visibility: hidden;
 }

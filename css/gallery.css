@@ -6,7 +6,6 @@ body {
 /* --- Header --- */
 .gallery-header {
   padding: 120px var(--gutter) var(--space-xl);
-  text-align: center;
 }
 
 .gallery-header__title {

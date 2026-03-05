@@ -249,7 +249,7 @@
 }
 
 .hero__content {
-  margin-top: 40vh;
+  margin-top: 50vh;
   padding: 0 var(--gutter);
   text-align: center;
 }
@@ -275,7 +275,7 @@
 
 .hero__footer {
   display: flex;
-  margin-top: 10vh;
+  margin-top: 15vh;
   justify-content: center;
   gap: var(--space-md);
   padding: var(--space-xl) var(--gutter);
@@ -405,7 +405,7 @@
   flex-direction: column;
   justify-content: center;
   text-align: center;
-  padding: var(--space-xl) var(--gutter) var(--space-xl);
+  padding: var(--space-2xl)  var(--space-2xl);
   background: var(--color-white);
 }
 
@@ -587,7 +587,7 @@
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin-bottom: var(--space-2xl);
+  margin-bottom: var(--space-lg);
 }
 
 .footer__logo img {
